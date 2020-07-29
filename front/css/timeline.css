@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+ .yeet {
+	 font-family: 'Open Sans', sans-serif;
+	 margin: 0;
+	 padding: 0 4em;
+}
+ main {
+	 min-width: 300px;
+	 max-width: 500px;
+	 margin: 20px auto;
+}
+
+@media (min-width: 0px) and (max-width: 1023px) {
+	main {
+		max-width: 300px !important;
+	}
+}
+ h3 {
+   font-size: 1em;
+   font-weight: 150 !important;
+	 line-height: 2em;
+	 border-top: 3px solid;
+	 border-image: linear-gradient(90deg, rgba(1, 31, 91, 0.9766281512605042) 0%, rgba(112, 128, 144, 0.9626225490196079) 34%, rgba(119, 108, 121, 0.9738270308123249) 66%, rgba(153, 0, 0, 0.9570203081232493) 100%);
+	 border-image-slice: 1;
+	 border-width: 3px;
+	 margin: 0px;
+	 padding: 40px;
+	 counter-increment: section;
+	 position: relative;
+	 color: #34435e;
+}
+ 
+ h3:nth-child(odd) {
+	 border-right: 3px solid;
+	 padding-left: 0;
+}
+ h3:nth-child(odd):before {
+	 left: 50%;
+	 margin-left: -35px;
+}
+ h3:nth-child(even) {
+	 border-left: 3px solid;
+	 padding-right: 0;
+}
+ h3:nth-child(even):before {
+	 right: 100%;
+	 margin-right: -35px;
+}
+ h3:first-child {
+	 border-top: 0;
+	 border-top-right-radius: 0;
+	 border-top-left-radius: 0;
+}
+ h3:last-child {
+	 border-bottom-right-radius: 0;
+	 border-bottom-left-radius: 0;
+}
+ 
