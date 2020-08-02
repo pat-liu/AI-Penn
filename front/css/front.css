@@ -6661,7 +6661,6 @@ input[type="button"].btn-block {
     position: relative;
     display: flex;
     width: 130%;
-    height: 680px;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
