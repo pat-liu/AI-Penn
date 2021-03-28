@@ -231,12 +231,12 @@ font-size: 22px;text-align: center!important;">
             }
             </style>
 
-<section class="text-black" style="background-color: #f4f6fc; padding-top: 4rem">
+<section class="text-black" style="background-color: white; padding-top: 4rem">
     <div class="container" style="justify-content: center;">
 
-        <div class="col-12" style="margin:auto">
+        <div class="col-8" style="margin:auto">
 
-            <h2 class="display-2 text-center mb-5 mb-lg-7" style = "font-size: 3vwmax; margin:auto">Venture Fellows Recruitment</h2>
+            <h2 class="display-2 text-center mb-5 mb-lg-7" style = "font-size: 3vwmax; margin:auto">AI Hacks 2020 Recap</h2>
 
             <hr style="
              height: 3.5px;
@@ -247,209 +247,75 @@ font-size: 22px;text-align: center!important;">
              overflow: hidden;
              animation: short-width 1s ease-out forwards; margin-bottom: 3rem;text-align:center">
 
-            <div class="graphic" style="text-align:center;">
-                    <a href="https://linktr.ee/aiatpenn"><img src="./venture.png" width=80% height="auto" alt="Logo dark"></a>
+             <h2><b>About the Hackathon</b></h2>
 
-            </div>
+            <p class="lead mb-4" style="font-size: 2.2vh;">AI Hacks 2020, the University of Pennsylvania’s premier student run datathon, was held from November 30 to December 7, 2020, and hosted over 160 participants from over 30 universities across the world. Teams analyzed data sets of hundreds of thousands of real customer interactions to develop new product features for NeuroFlow, an award-winning behavioral health platform.</p>
+            <br>
+
             <div class="graphic" style="text-align:center;">
+                <a href="https://linktr.ee/aiatpenn"><img src="./aihacksbanner.png" width=80% height="auto" alt="Logo dark"></a>
+            </div><br>
+
+            <br>
+            <h2><b>About NeuroFlow</b></h2>
+
+            <p class="lead mb-4" style="font-size: 2.2vh;">NeuroFlow is a healthcare technology and analytics company enabling behavioral health access and engagement across the continuum of care.
+                <br><br>
+                Combining validated techniques, data science, and behavioral economics, NeuroFlow helps leading insurance, healthcare, and government organizations deliver personalized, evidence based behavioral health solutions.
+                </p>
+
                 <br>
-                <h2 class="display-2 text-center mb-5 mb-lg-7" style = "font-size: 20px; margin:auto; color:#011F5b">Applications are due 11:59 PM EST on 2/12/21.</h2>
+                <h2><b>The Challenge</b></h2>
+
+                <p class="lead mb-4" style="font-size: 2.2vh;">NeuroFlow’s behavioral health platform provides a wide range of videos to promote mindfulness and self care to its patients. Teams worked to develop a patient video recommender system to optimize the user experience on the platform. <br><br>
+
+                    Upon the start of the challenge period, teams were provided access to approximately 140,000 data points on patient interactions with videos on NeuroFlow’s platform. This dataset includes demographic information about the users and key metadata about the videos. <br><br>
+
+                    After the conclusion of the challenge period, finalist teams were invited to present their solutions to NeuroFlow representatives and researchers at the Wharton Customer Analytics Initiative.
+
+                </p>
+                <br>
+
+                <h2><b>The Winning Solution</b></h2>
+
+                <p class="lead mb-4" style="font-size: 2.2vh;">The winning team developed a sophisticated model to handle data processing, feature engineering, dimensionality reduction, and neural network prediction.<br><br>
+
+                    To categorize videos that were missing topic labels, the team analyzed notes about the videos using Multinomial Naive Bayes and transcripts of the videos using Latent Dirichlet Allocation. <br><br>This dual categorizing method proved highly accurate and allowed for videos to be assigned to multiple categories when applicable.
+
+                    The model then performed PCA dimensionality reduction on both the video space and user space. This allowed the model to identify only the most important features and prevent
+                    overfitting to spurious variables. <br><br>
+
+                    To make a video recommendation, the algorithm takes a user in the user space outputted by the PCA, trains a neural network on a user and its older watch history, and uses a softmax classifier to predict the most recent video watched.
+                    <br><br>
+                    See the full presentation <a style="color:blue;font-size: 2.2vh !important" href="https://drive.google.com/file/d/1PBjgnvWHGbkJ3g7FqFYcZn8cKPIjm0qw/view">here</a> to learn more about the winning model.
+
+                </p>
+
+                <br>
+
+                <h3><b>Technical Workflow</b></h3>
+
+                <p class="lead mb-4" style="font-size: 2.2vh;">The winning team developed a sophisticated model to handle data processing, feature engineering, dimensionality reduction, and neural network prediction.<br><br>
+
+                    To categorize videos that were missing topic labels, the team analyzed notes about the videos using Multinomial Naive Bayes and transcripts of the videos using Latent Dirichlet Allocation. <br><br>This dual categorizing method proved highly accurate and allowed for videos to be assigned to multiple categories when applicable.
+
+                    The model then performed PCA dimensionality reduction on both the video space and user space. This allowed the model to identify only the most important features and prevent
+                    overfitting to spurious variables. <br><br>
+
+                    To make a video recommendation, the algorithm takes a user in the user space outputted by the PCA, trains a neural network on a user and its older watch history, and uses a softmax classifier to predict the most recent video watched.
+                    <br><br>
+                    See the full presentation <a style="color:blue;font-size: 2.2vh !important" href="https://drive.google.com/file/d/1PBjgnvWHGbkJ3g7FqFYcZn8cKPIjm0qw/view">here</a> to learn more about the winning model.
+                </p>
         </div>
 
+        <div class="graphic" style="text-align:center;">
+           <img src="./techworkflow.png" width=62% height="auto" alt="Logo dark">
+        </div><br>
 
-        </div>
+        <br><br>
 
 
 </section>
-
-
-        <section class="section-lg text-black" style="background-color: #f4f6fc">
-            <div class="horizontal-line" style="margin-bottom: 80px; margin-top:0px">
-                <div class="divider" ></div>
-                </div>
-            <!--<div class="horizontal-line" style="margin-bottom: 120px;">
-                <div class="divider" ></div>
-                </div>-->
-            <div class="container" style="justify-content: center;">
-
-                <div class="col-12">
-
-                    <h2 class="display-2 text-center mb-5 mb-lg-7" style = "font-size: 3vwmax; margin-bottom: -40px;">Club Tenets</h2>
-
-                    <hr style="
-                     height: 3.5px;
-                     width: 175px;
-                     left: 0;
-                     right: 0;
-                     background:rgb(153, 0, 0) ;
-                     overflow: hidden;
-                     animation: short-width 1s ease-out forwards; margin-bottom: 3rem;">
-
-                      <p class="lead mb-4" style="font-size: 2.2vh;">AI@Penn is the premier student organization for undergraduates interested in Artificial Intelligence. Artificial Intelligence is bound to redefine every industry vertical, and we seek to lower the barriers for undergraduates looking to enter this fast-paced and dynamic field that lies in the intersection of business and technology.
-                        <br> <br>
-                        Partnering with the Wharton AI for Business Initiative, we aim to support students through building technical skills and applying these tools to various industry spaces.
-
-
-                         Through speaker events with global AI thinkers, alumni, and professors, we provide undergraduates with the opportunity to explore career paths in this field, both technical and non-technical,
-                          while networking with industry professionals and learning about current trends and developments. </p>
-
-
-                </div>
-
-
-        </section>
-
-        <div class="board" style="margin: 30px auto; margin-top: 0px; margin-bottom: 100px; width: 60%; display: flex;
-        justify-content: center;
-        flex-direction: row; align-content: flex-start">
-
-        <div class="card" style="text-align: center; display: inline-block; padding: 0px !important;">
-            <span class="icon icon-lg mb-4" style="margin-top: 50px;"><i class="fas fa-laptop-code"></i></span>
-            <h1 style="margin-top: 20px; font-size: 4vh;">Education</h1>
-            <p style="text-align: left; padding: 30px; font-size: 1.6vh; color: black"> As an organization, we seek to lower the barriers for undergraduates entering the fields of Artificial Intelligence and Machine Learning. Every semester, we host a biweekly education series focused on teaching state of the art AI models, while exploring their applications in a host of industries ranging from Finance to Self-Driving Cars.
-          </p>
-            <div style="margin: 40px 0;">
-
-            </div>
-
-          </div>
-
-          <div class="card" style="text-align: center; display: inline-block;">
-            <span class="icon icon-lg mb-4" style="margin-top: 50px;"><i class="fas fa-user-tie"></i></span>
-            <h1 style="margin-top: 20px;font-size: 4vh;">Recruiting</h1>
-            <p style="text-align: left; padding: 30px;font-size: 1.6vh;color: black">We hope to navigate students through recruiting for AI companies and opportunities. We will use a pipeline that will connect potential candidates to exclusive internships and full time positions, while mentoring them along the way. We plan to hold an undergraduate recruiting circle, allowing them to network with leading firms.
-          </p>
-            <div style="margin: 40px 0;">
-
-            </div>
-        </div>
-
-        <div class="card" style="text-align: center; display: inline-block;">
-            <span class="icon icon-lg mb-4" style="margin-top: 50px;"><i class="fas fa-project-diagram"></i></span>
-            <h1 style="margin-top: 20px;font-size: 4vh;">Events</h1>
-            <p style="text-align: left; padding: 30px;font-size: 1.6vh;color: black">Designed to expose undergraduates to the rapidly growing field of Artifical Intelligence, we host leading global AI specialists at our speaker series, ranging from top professionals at Fortune 100 firms to entrepreneurs driving cutting edge innovation. We seek to expose undergraduates to both technical and business opportunities within AI.
-
-          </p>
-            <div style="margin: 40px 0;">
-
-            </div>
-
-          </div>
-        </div>
-
-
-
-        <section class="signup" style="background-color: #f4f6fc;">
-            <div class="horizontal-line" style="margin-bottom: 120px;">
-                <div class="divider" ></div>
-                </div>
-            <div class="container" style="text-align: center">
-                <div class="box" style="margin-bottom: -20px; margin-top: 0px; display: inline-block">
-                <h1 class="display-2 text-center " style = "font-size: 3vwmax; margin-top: 40px;">Subscribe to Our Newsletter</h1>
-                <h1 style="text-align: center; font-size: 60px;margin-bottom: -20px;">✉️</h1>
-
-                        <hr style="
-                         height: 3.5px;
-                         width: 175px;
-                         left: 0;
-                         right: 0;
-                         background: #011F5b;
-                         overflow: hidden;
-                         animation: short-width 1s ease-out forwards;
-                         margin-bottom: 2rem;">
-                <p style="text-align: center; font-size: 1.8vh">We will send you updates on event dates, application deadlines, and opportunities.</p>
-                <br>
-
-
-                <form id="myInput" name="submit-to-google-sheet" action="#">
-                    <div class="form-row">
-                        <div class="col-8"  style="margin-bottom: 50px;">
-                            <input type="email" class="form-control mb-2" style="height: 50px; background:whitesmoke; color: black;"placeholder="Your e-mail address here!" name="email" required>
-                        </div>
-                        <div class="col-4" style="text-align: center;">
-                            <button type="submit" class="btn btn-secondary btn-block" style="height:48px;display: inline-block;
-                            margin: 0 auto;
-                            padding: 0;
-                            display: inline-block;
-                            line-height: 50px;
-                            margin-bottom: .5em;
-                            text-align: center;
-                           ">Subscribe</button>
-                        </div>
-                    </div>
-                </form>
-
-                <script>
-                    const scriptURL = 'https://script.google.com/macros/s/AKfycbzNeDIoGd3ry9ILaTaTXqov01JgAjVu_jnVAAveNtbJjJSZ2Q0/exec'
-                    const form = document.forms['submit-to-google-sheet']
-
-                    form.addEventListener('submit', e => {
-                      e.preventDefault()
-                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                        .then(response => console.log('Success!', response))
-                        .catch(error => console.error('Error!', error.message))
-                        document.getElementById("myInput").reset();
-                        $('input').attr('placeholder',"You've been subscribed!");
-                    })
-                  </script>
-
-<script>
-    $(window).load(function() {
-    $('form').children('input:not(#submit)').val('')
-    }
-
-    </script>
-
-
-            </div>
-        </div>
-
-        <div class="horizontal-line" style="margin-top: 120px;margin-bottom: 80px;">
-            <div class="divider" ></div>
-            </div>
-
-            <div class="container">
-
-
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="display-2 text-center mb-5 mb-lg-7" style = "font-size: 3vwmax;">Sponsors</h2>
-
-                        <hr style="
-                         height: 3.5px;
-                         width: 175px;
-                         left: 0;
-                         right: 0;
-                         background: rgb(153, 0, 0);
-                         overflow: hidden;
-                         animation: short-width 1s ease-out forwards;">
-
-
-
-
-
-                         <div style="margin-top:90px;">
-                            <a href = "https://www.wharton.upenn.edu/ai-for-business/?fbclid=IwAR0MEFS7UGbsNuJEfT_UV0R7WtxweJ13SadBST0kG9qHCNLuS4z_oIIff8E">
-                                <img src="./aiforbusiness.png"style="display:block;
-                                margin:auto;width: 45%; height: auto;">
-                            </a>
-
-
-                        </div>
-                        <div style="margin-top:40px; margin-bottom: 160px;">
-                            <a href = "https://wca.wharton.upenn.edu/corporations/dynamic-learning-partner/analytics-accelerators/">
-                                <img src="./customeranalytics.png" style="display:block;
-                                margin:auto;width: 45%; height: auto;">
-                            </a>
-
-                        </div>
-                    </div>
-    </section>
-
-
-
-
-
 
     <footer class="footer section pt-6 pt-md-8 pt-lg-10 pb-3 bg-primary text-white overflow-hidden" >
     <div class="container" style="justify-content: center;margin-left:auto; margin-right:auto; width: 100%">
@@ -516,3 +382,6 @@ font-size: 22px;text-align: center!important;">
 </body>
 
 </html>
+<style>
+
+</style>
