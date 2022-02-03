@@ -234,85 +234,177 @@ font-size: 22px;text-align: center!important;">
 <section class="text-black" style="background-color: white; padding-top: 4rem">
     <div class="container" style="justify-content: center;">
 
-        <div class="col-8" style="margin:auto">
+        <div class="col-9" style="margin:auto">
 
-            <h2 class="display-2 text-center mb-5 mb-lg-7" style = "font-size: 3vwmax; margin:auto">AI Hacks 2020 Recap</h2>
+            <h2 class="display-2 text-center mb-5 mb-lg-7" style = "font-size: 3vwmax; margin:auto;"><b>AI Hacks 2022</b>: <br>February 21-February 28
+            </h2>
 
             <hr style="
              height: 3.5px;
              width: 175px;
              left: 0;
              right: 0;
-             background:rgb(153, 0, 0) ;
+             background:#1fb6ff;
              overflow: hidden;
              animation: short-width 1s ease-out forwards; margin-bottom: 3rem;text-align:center">
 
-             <h2><b>About the Hackathon</b></h2>
+             <h2><b>About SafeGraph             </b></h2>
 
-            <p class="lead mb-4" style="font-size: 2.2vh;">AI Hacks 2020, the University of Pennsylvania’s premier student run datathon, was held from November 30 to December 7, 2020, and hosted over 160 participants from over 30 universities across the world. Teams analyzed data sets of hundreds of thousands of real customer interactions to develop new product features for NeuroFlow, an award-winning behavioral health platform.</p>
+            <p class="lead mb-4" style="font-size: 2.2vh;">SafeGraph is a geospatial data company that curates high-precision data on millions of places around the globe. Our datasets provided detailed, accurate, and up-to-date information on points of interest and how people interact with those locations. Our mission is to build the highest-quality places data and make it available to all. That’s why leaders from large organizations like Sysco, Domino’s, Citizens Bank, and the Centers for Disease Control, as well as nonprofits and universities, rely on SafeGraph data to feed their data science models, research, and decision-making.
+            </p>
             <br>
 
             <div class="graphic" style="text-align:center;">
-                <a href="https://linktr.ee/aiatpenn"><img src="./aihacksbanner.png" width=80% height="auto" alt="Logo dark"></a>
+                <a href="https://safegraph.com"><img src="./safegraphlogo.png" width=80% height="auto" alt="Logo dark"></a>
             </div><br>
 
             <br>
-            <h2><b>About NeuroFlow</b></h2>
+            <h2><b>The Challenge</b></h2>
 
-            <p class="lead mb-4" style="font-size: 2.2vh;">NeuroFlow is a healthcare technology and analytics company enabling behavioral health access and engagement across the continuum of care.
+            <p class="lead mb-4" style="font-size: 2.2vh;background:#f0f7ff;padding:20px"><b>Where are the hospital deserts in the United States?</b>
+
+                <br>
+                Across the country, millions of Americans live in hospital deserts, areas where residents do not have sufficient access to healthcare facilities. These inequities can be further exaggerated by other factors like access to public transportation, income, and more. 
                 <br><br>
-                Combining validated techniques, data science, and behavioral economics, NeuroFlow helps leading insurance, healthcare, and government organizations deliver personalized, evidence based behavioral health solutions.
+                Using SafeGraph’s Core Places and Patterns datasets, teams will create a scoring system that measures healthcare access across the US. Things to consider may include (but not limited to):
+                <ul>
+                    <li style="font-size: 2.2vh;">Density of hospitals, pharmacies, and other healthcare POIs in an area</li>
+                    <li style="font-size: 2.2vh;">Density of public transit systems or other transportation infrastructure</li>
+                    <li style="font-size: 2.2vh;">Demographic profiles of visitors to these locations</li>
+                  </ul>                  
                 </p>
 
                 <br>
-                <h2><b>The Challenge</b></h2>
+                <h2><b>Prizes</b></h2>
 
-                <p class="lead mb-4" style="font-size: 2.2vh;">NeuroFlow’s behavioral health platform provides a wide range of videos to promote mindfulness and self care to its patients. Teams worked to develop a patient video recommender system to optimize the user experience on the platform. <br><br>
-
-                    Upon the start of the challenge period, teams were provided access to approximately 140,000 data points on patient interactions with videos on NeuroFlow’s platform. This dataset includes demographic information about the users and key metadata about the videos. <br><br>
-
-                    After the conclusion of the challenge period, finalist teams were invited to present their solutions to NeuroFlow representatives and researchers at the Wharton Customer Analytics Initiative.
-
+                <p class="lead mb-4" style="font-size: 2.2vh;">Winner of AI Hacks 2022 will receive:
+                    <ul>
+                        <li style="font-size: 2.2vh;">$300 cash prize</li>
+                        <li style="font-size: 2.2vh;">SafeGraph swag</li>
+                        <li style="font-size: 2.2vh;">Featured on SafeGraph site</li>
+                        <li style="font-size: 2.2vh;">Opportunity to interview for a data science internship at SafeGraph</li>
+                      </ul>     
                 </p>
                 <br>
 
-                <h2><b>The Winning Solution</b></h2>
+                <h2><b>Data Overview: SafeGraph’s Core Places & Patterns</b></h2>
 
-                <p class="lead mb-4" style="font-size: 2.2vh;">The winning team developed a sophisticated model to handle data processing, feature engineering, dimensionality reduction, and neural network prediction.<br><br>
+                <p class="lead mb-4" style="font-size: 2.2vh;">This challenge will feature two of our flagship datasets, <b>Core Places</b> and <b>Patterns</b>. <br><br>
+                    SafeGraph’s Core Places data provides baseline information for every record in the product suite, including location name, address, lat/long, category, brand, and more. <br><br>
+                    Our Patterns dataset includes visitor and demographic aggregations for points of interest (POIs). This contains aggregated raw counts of visits to POIs from a panel of mobile devices, answering how often people visit, how long they stay, where they came from, where else they go, and more. <br><br>
+                    Teams may also find demographic information from the US Census and American Community Survey data helpful. You can download that data from SafeGraph <a style="color:blue;font-size: 2.2vh !important" href="https://www.safegraph.com/free-data/open-census-data">here</a>.                    
+                </p>
 
-                    To categorize videos that were missing topic labels, the team analyzed notes about the videos using Multinomial Naive Bayes and transcripts of the videos using Latent Dirichlet Allocation. <br><br>This dual categorizing method proved highly accurate and allowed for videos to be assigned to multiple categories when applicable.
+                <br>
 
-                    The model then performed PCA dimensionality reduction on both the video space and user space. This allowed the model to identify only the most important features and prevent
-                    overfitting to spurious variables. <br><br>
+                <h3><b>Getting Started</b></h3>
 
-                    To make a video recommendation, the algorithm takes a user in the user space outputted by the PCA, trains a neural network on a user and its older watch history, and uses a softmax classifier to predict the most recent video watched.
+                <p class="lead mb-4" style="font-size: 2.2vh;"><span style="color:grey"> 1. Sign up for the Data for Academics Program.</span>
                     <br><br>
-                    See the full presentation <a style="color:blue;font-size: 2.2vh !important" href="https://drive.google.com/file/d/1PBjgnvWHGbkJ3g7FqFYcZn8cKPIjm0qw/view">here</a> to learn more about the winning model.
 
-                </p>
-
-                <br>
-
-                <h3><b>Technical Workflow</b></h3>
-
-                <p class="lead mb-4" style="font-size: 2.2vh;">The winning team developed a sophisticated model to handle data processing, feature engineering, dimensionality reduction, and neural network prediction.<br><br>
-
-                    To categorize videos that were missing topic labels, the team analyzed notes about the videos using Multinomial Naive Bayes and transcripts of the videos using Latent Dirichlet Allocation. <br><br>This dual categorizing method proved highly accurate and allowed for videos to be assigned to multiple categories when applicable.
-
-                    The model then performed PCA dimensionality reduction on both the video space and user space. This allowed the model to identify only the most important features and prevent
-                    overfitting to spurious variables. <br><br>
-
-                    To make a video recommendation, the algorithm takes a user in the user space outputted by the PCA, trains a neural network on a user and its older watch history, and uses a softmax classifier to predict the most recent video watched.
+                    We're democratizing access to data through our academic program. By signing-up for SafeGraph’s Data for Academics program, you’ll receive free access to Core Places and Patterns for your non-commercial work.
                     <br><br>
-                    See the full presentation <a style="color:blue;font-size: 2.2vh !important" href="https://drive.google.com/file/d/1PBjgnvWHGbkJ3g7FqFYcZn8cKPIjm0qw/view">here</a> to learn more about the winning model.
+                    <a style="color:blue;font-size: 2.2vh !important" href="https://www.safegraph.com/academics">Go here</a> and be sure to sign up with your academic email address. If you’re running into any issues, please contact Niki Kazahaya (niki@safegraph.com). 
+ <br><br>
+
+ <p class="lead mb-4" style="font-size: 2.2vh;">
+ <span style="color:grey">2. Start downloading data from the SafeGraph Shop.</span>
+                                        <br><br>
+
+                                        After signing up, you will receive an email with credentials to the SafeGraph Shop. This will be where you go to access free data from SafeGraph.
+                                        <br><br>
+
+                                        You may find the following healthcare-related NAICS codes helpful to get started. However, please feel free to include others in your project. For more information around NAICS,  <a style="color:blue;font-size: 2.2vh !important" href="https://www.naics.com/">go here</a>. 
+
+                                        <p class="lead mb-4" style="font-size: 2.2vh;">Winner of AI Hacks 2022 will receive:
+                                            <ul>
+                                                <li style="font-size: 2.2vh">622110 - General Medical and Surgical Hospitals</li>
+                                                <li style="font-size: 2.2vh">446110 - Pharmacies and Drug Stores</li>
+                                                <li style="font-size: 2.2vh">621493 - Freestanding Ambulatory Surgical and Emergency Centers</li>
+                                              </ul>     
+                                        </p>
+</p>
+
+<br>
+
+<p class="lead mb-4" style="font-size: 2.2vh;">
+    <span style="color:grey">3. Get help with using SafeGraph data.</span>
+                                           <br><br>
+   
+                                           To become an expert using SafeGraph data, be sure to check out the following:
+
+                                           <br><br>
+   
+                                           <span style="color: #145da9">SafeGraph Community</span> <br>
+                                           <br>
+                                           Go to the <a style="color:blue;font-size: 2.2vh !important" href="https://www.safegraph.com/community/">SafeGraph Community</a> to get help from experienced SafeGraph users. By now, you should have an account with the SafeGraph Shop. <b>You can use the same credentials to log into the Community. </b>
+                                            <br><br>
+                                           To see common questions from our users, go to the <a style="color:blue;font-size: 2.2vh !important" href="https://www.safegraph.com/community/c/help/33"> Help</a> category. If you have a question, try searching in the Community before starting a new topic.
+                                            <br><br>
+                                            <span style="color: #145da9">Docs & Schema</span> <br>
+
+                                            <p class="lead mb-4" style="font-size: 2.2vh;">You can see the full schema and other important details for each dataset here:
+                                                <ul>
+                                                    <li style="font-size: 2.2vh"><a style="color:blue;font-size: 2.2vh !important" href="https://docs.safegraph.com/docs/core-places">Core Places</a></li>
+                                                    <li style="font-size: 2.2vh"><a style="color:blue;font-size: 2.2vh !important" href="https://docs.safegraph.com/docs/monthly-patterns">Patterns</a></li>
+                                                  </ul>     
+                                            </p> 
+
+                                            <p class="lead mb-4" style="font-size: 2.2vh;margin-top:40px">
+                                                <span style="color: #145da9">Data Science Resources</span> <br>
+                                                <br>
+                                                <a style="color: blue" href="https://docs.safegraph.com/docs/data-science-resources">This repository of tutorials and demonstrations</a> help data scientists get value faster with SafeGraph data. Topics include panel normalization, common use cases for SafeGraph, how to integrate SafeGraph with data science platforms, and more.
+                                            </p>
+   </p>
+
+<br>
+<p class="lead mb-4" style="font-size: 2.2vh;">
+    <span style="color:grey">4. Share your projects in the SafeGraph Community.</span>
+<br><br>
+    To submit your projects, please share your work in the Show the Community category. Create a new topic and be sure to add the tag, ai-hacks. This will help our judges locate your submissions. Please include:
+    <ul>
+        <li style="font-size: 2.2vh">A brief overview of your project.</li>
+        <li style="font-size: 2.2vh">Link to Google Colab/Jupyter notebook of your code and process.</li>
+        <li style="font-size: 2.2vh">Short slide deck summarizing methodology and results.</li>
+    </ul>   
+</p> <br>
+
+<h3><b>Judging</b></h3>
+
+<p class="lead mb-4" style="font-size: 2.2vh !important;">
+Projects will be judged on the following:
+    <ul>
+        <li style="font-size: 2.2vh">Technology (quality of code, technical and analytical skills demonstrated).</li>
+        <li style="font-size: 2.2vh">Applicability (potential to make positive impact).</li>
+        <li style="font-size: 2.2vh">Creativity & Innovation (novelty of the approach)</li>
+        <li style="font-size: 2.2vh">Presentation (quality of submitted slide deck, quality of live presentation for finalists).</li>
+    </ul>   
+    <p style="font-size:2.2vh">Finalists will be invited to provide a 5 minute presentation to judges from the SafeGraph team.</p>
+
+</p>
+<br>
+<h3><b>Important Dates*</b></h3>
+   
+
+                    
                 </p>
         </div>
 
         <div class="graphic" style="text-align:center;">
-           <img src="./techworkflow.png" width=62% height="auto" alt="Logo dark">
+           <img src="./schedule.png" width=75% height="auto" alt="Logo dark">
+
+           <p style="font-size:2.2vh;margin-top:30px">*Dates and times are subject to change.</p>
+
+        <br>
+           <p style="color:#1fb6ff;text-align:center;">SafeGraph Contact Info:<br>
+            Niki Kazahaya, Community Manager<br>
+            niki@safegraph.com
+            </p>
+
         </div><br>
 
         <br><br>
+
 
 
 </section>
